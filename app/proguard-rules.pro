@@ -1,0 +1,1 @@
+-keep class com.medicare.app.data.api.dto.** { *; }
