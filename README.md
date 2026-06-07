@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MediCare (Android)
 
 Application Android native (Kotlin + Jetpack Compose) pour le suivi de traitements
@@ -30,3 +31,7 @@ Structure des packages : voir `app/src/main/java/com/medicare/app/`.
   générer le wrapper et builder.
 - Les icônes / splash sont laissés par défaut ; ajoutez vos ressources
   dans `app/src/main/res/`.
+=======
+# Medicare
+MediCare aide les patients à suivre leurs traitements facilement. L’utilisateur saisit ses maladies et médicaments, puis l’application génère un planning précis. Des rappels intelligents évitent les oublis, et chaque prise peut être confirmée avec un suivi complet de l’observance.
+>>>>>>> 0d6104cbed72b04dd4ee96096c82446412e5780f
