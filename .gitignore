@@ -1,25 +1,8 @@
-# ==========================================
-# Règles pour l'application Mobile (Android)
-# ==========================================
-.gradle
-/local.properties
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-app/build
-app/release
-
-# ==========================================
-# Règles pour le Backend (Spring Boot)
-# ==========================================
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-src/main/resources/firebase-service-account.json
 
 ### STS ###
 .apt_generated
@@ -30,7 +13,7 @@ src/main/resources/firebase-service-account.json
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA / Android Studio ###
+### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
@@ -42,8 +25,11 @@ src/main/resources/firebase-service-account.json
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+src/main/resources/firebase-service-account.json
