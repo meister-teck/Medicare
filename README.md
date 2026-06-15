@@ -37,7 +37,7 @@ MediCare est une solution complète de suivi médical conçue pour aider les uti
 3. Se placer dans le dossier backend et lancer l'application :
 ```bash
    cd backend
-   ./mvnw spring-boot:run<<<<<<< HEAD
+   ./mvnw spring-boot:run
 # MediCare (Android)
 
 Application Android native (Kotlin + Jetpack Compose) pour le suivi de traitements
@@ -73,4 +73,4 @@ Structure des packages : voir `app/src/main/java/com/medicare/app/`.
 =======
 # Medicare
 MediCare aide les patients à suivre leurs traitements facilement. L’utilisateur saisit ses maladies et médicaments, puis l’application génère un planning précis. Des rappels intelligents évitent les oublis, et chaque prise peut être confirmée avec un suivi complet de l’observance.
->>>>>>> 0d6104cbed72b04dd4ee96096c82446412e5780f
+
