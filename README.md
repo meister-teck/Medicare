@@ -1,39 +1,35 @@
 # MediCare - Application de Suivi Médical
 
 ## 📌 Présentation
-MediCare est une solution complète de suivi médical conçue pour aider les utilisateurs à gérer facilement leurs traitements, leurs conditions de santé et leurs rappels de médicaments. Le projet est divisé en deux parties : une application mobile native Android garantissant une expérience utilisateur fluide, et une API REST robuste assurant la gestion et la sécurité des données.
+MediCare est une application complète permettant aux utilisateurs de gérer facilement leurs traitements médicaux, leurs conditions de santé et de recevoir des rappels pour la prise de leurs médicaments. 
 
-## 📸 Aperçu de l'application
-*(Remplacer par les liens vers vos captures d'écran après les avoir ajoutées dans le dossier docs)*
-`![Écran d'accueil](docs/screenshots/accueil.png)`
-`![Liste des médicaments](docs/screenshots/medicaments.png)`
+Le projet adopte une architecture client-serveur claire, séparée en deux environnements distincts.
 
-## 🛠️ Architecture et Technologies
+## 🛠️ Technologies Utilisées
 
-### Backend (API REST)
-* **Langage & Framework :** Java 17, Spring Boot
-* **Sécurité :** Spring Security, Authentification par Token (JWT)
-* **Persistance des données :** Hibernate / Spring Data JPA
-* **Services Tiers :** Firebase Cloud Messaging (FCM) pour les notifications push
+**Backend (API REST) :**
+* **Framework :** Java, Spring Boot
+* **Sécurité :** Spring Security, JWT (JSON Web Tokens)
+* **Notifications :** Firebase Cloud Messaging (FCM)
 
-### Application Mobile (Android)
-* **Langage & UI :** Kotlin, Jetpack Compose
-* **Architecture :** MVVM (Model-View-ViewModel) et Clean Architecture
-* **Réseau & Cache :** Retrofit (appels API) et Room (base de données locale)
-* **Injection de dépendances :** Dagger Hilt
+**Mobile (Client Android) :**
+* **Interface & Langage :** Kotlin, Jetpack Compose
+* **Architecture :** MVVM, Clean Architecture
+* **Outils :** Room (Cache local), Retrofit (Appels API), Dagger Hilt (Injection de dépendances)
 
-## 📂 Structure du Répertoire
+## 📂 Structure du Dépôt
 
-* `/backend` : Code source et fichiers de configuration de l'API Spring Boot.
-* `/mobile` : Code source du client Android natif.
-* `/docs` : Contient le rapport complet du projet, les diagrammes et les captures d'écran.
+* `/backend` : Code source et configuration du serveur Spring Boot.
+* `/Mobile` : Code source de l'application Android native.
 
-## 🚀 Installation et Lancement
+## 🚀 Lancement Rapide
 
-### 1. Configuration du Backend
-1. S'assurer qu'une base de données compatible est configurée selon les paramètres de `application.yml`.
-2. Ajouter le fichier d'authentification `firebase-service-account.json` dans `backend/src/main/resources/`.
-3. Se placer dans le dossier backend et lancer l'application :
-```bash
-   cd backend
-   ./mvnw spring-boot:run
+### 1. Démarrer le Backend
+1. Ouvrez le dossier `/backend` dans votre IDE (IntelliJ / Eclipse).
+2. Vérifiez la configuration de la base de données dans `application.yml`.
+3. Lancez l'application via la classe `BackendApplication.java` ou via le terminal : `./mvnw spring-boot:run`.
+
+### 2. Démarrer l'Application Mobile
+1. Ouvrez le dossier `/Mobile` directement dans Android Studio.
+2. Laissez Gradle synchroniser le projet.
+3. Lancez l'application sur un émulateur ou un appareil physique.
